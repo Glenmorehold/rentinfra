@@ -430,8 +430,8 @@ INSERT INTO public.settings (key, value, type, description) VALUES
 ('currency', 'EUR', 'string', 'Default currency'),
 ('tax_rate', '0', 'number', 'Tax rate percentage (IVA)'),
 ('company_phone', '+260975555555', 'string', 'Company phone and WhatsApp'),
-('company_email', 'info@Zikulu .com', 'string', 'Company contact email'),
-('company_address', '123 Example Street, Suite 100, 00000 Demo City, Demo Country', 'string', 'Company address');
+('company_email', 'info@Zikulu.com', 'string', 'Company contact email'),
+('company_address', '123 Example Street, Mutumbi, 00000 Lusaka City, Zambia', 'string', 'Company address');
 
 -- Locations
 INSERT INTO public.locations (name_en, name_es, type, address, extra_fee) VALUES
@@ -637,8 +637,8 @@ INSERT INTO public.faqs (question_en, question_es, answer_en, answer_es, categor
 (
   'Can I cancel or modify my booking?',
   '¿Puedo cancelar o modificar mi reserva?',
-  'Yes. Please contact us as soon as possible by phone or WhatsApp at +1 000 000 0000. Cancellation policies depend on the notice period given. Our team will be happy to assist with any changes.',
-  'Sí. Por favor, contáctanos lo antes posible por teléfono o WhatsApp al +1 000 000 0000. Las políticas de cancelación dependen del plazo de aviso.',
+  'Yes. Please contact us as soon as possible by phone or WhatsApp at +260975555555. Cancellation policies depend on the notice period given. Our team will be happy to assist with any changes.',
+  'Sí. Por favor, contáctanos lo antes posible por teléfono o WhatsApp al +260975555555. Las políticas de cancelación dependen del plazo de aviso.',
   'bookings', 7
 ),
 (

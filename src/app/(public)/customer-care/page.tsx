@@ -19,7 +19,7 @@ export default async function CustomerCarePage() {
   const settings = await getSettingsMap()
   const phone = settings.company_phone || '+260975555555'
   const whatsapp = settings.social_whatsapp || `https://wa.me/${phone.replace(/[^0-9]/g, '')}`
-  const address = settings.company_address || '123 Example Street, Suite 100, 00000 Demo City, Demo Country'
+  const address = settings.company_address || '123 Example, Mutumbi, 00000 Luska City, Zambia'
   const officeHoursOpen = settings.office_hours_open || '08:00'
   const officeHoursClose = settings.office_hours_close || '20:00'
 

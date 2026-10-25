@@ -28,7 +28,7 @@ export default async function TermsPage() {
           [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:text-gray-600 [&_ul]:mb-4">
 
           {/* TODO: replace company name, address and jurisdiction below with your own business details */}
-          <p>These Terms and Conditions govern the rental of vehicles from Zikulu  Demo, operating from 123 Example Street, Suite 100, 00000 Demo City, Demo Country. By making a booking, you agree to these terms in full.</p>
+          <p>These Terms and Conditions govern the rental of vehicles from Zikulu , operating from 123 Example 100,  Luska City, Zambia. By making a booking, you agree to these terms in full.</p>
 
           <h2>1. Eligibility</h2>
           <ul>
@@ -80,7 +80,7 @@ export default async function TermsPage() {
 
           <h2>7. Breakdowns & Accidents</h2>
           <ul>
-            <li>In the event of a breakdown, contact us immediately at +1 000 000 0000.</li>
+            <li>In the event of a breakdown, contact us immediately at +260975555555.</li>
             <li>In the event of an accident, call your local emergency services first, then notify us.</li>
             <li>Do not admit liability to third parties without our consent.</li>
             <li>A fully completed accident report form must be submitted within 24 hours.</li>
