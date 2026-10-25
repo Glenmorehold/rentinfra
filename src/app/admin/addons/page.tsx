@@ -10,7 +10,7 @@ export default async function AdminAddons() {
   return (
     <div className="space-y-5">
       <div className="flex items-center justify-between">
-        <h1 className="text-xl font-bold text-[var(--ink)]">Addons &amp; Extras</h1>
+        <h1 className="text-xl font-bold text-(--ink)">Addons &amp; Extras</h1>
         <Link href="/admin/addons/new"
           className="btn-signal flex items-center gap-2 px-4 py-2 text-sm font-bold">
           <Plus size={16} /> Add Addon
@@ -20,7 +20,7 @@ export default async function AdminAddons() {
       <div className="op-panel overflow-hidden">
         <table className="op-table w-full text-sm">
           <thead>
-            <tr className="text-xs uppercase tracking-wide text-[var(--ink-soft)]">
+            <tr className="text-xs uppercase tracking-wide text-(--ink-soft)">
               <th className="px-4 py-3 text-left">Name</th>
               <th className="px-4 py-3 text-left">Pricing</th>
               <th className="px-4 py-3 text-left">Price</th>

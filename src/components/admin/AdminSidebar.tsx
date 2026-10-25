@@ -39,7 +39,7 @@ function Wordmark() {
       </span>
       <div>
         <p className="text-sm font-bold text-white">
-          RENT<span className="text-[var(--pane-signal)]">INFRA</span>
+          ZIKULU<span className="text-[var(--pane-signal)]">CARS</span>
         </p>
         <p className="text-[10px] uppercase tracking-widest text-gray-500">Admin</p>
       </div>

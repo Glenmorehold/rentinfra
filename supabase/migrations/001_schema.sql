@@ -429,7 +429,7 @@ INSERT INTO public.settings (key, value, type, description) VALUES
 ('after_hours_fee', '30', 'number', 'Extra fee for after-hours pickup/delivery (EUR)'),
 ('currency', 'EUR', 'string', 'Default currency'),
 ('tax_rate', '0', 'number', 'Tax rate percentage (IVA)'),
-('company_phone', '+10000000000', 'string', 'Company phone and WhatsApp'),
+('company_phone', '+260975555555', 'string', 'Company phone and WhatsApp'),
 ('company_email', 'info@Zikulu .com', 'string', 'Company contact email'),
 ('company_address', '123 Example Street, Suite 100, 00000 Demo City, Demo Country', 'string', 'Company address');
 

@@ -3,7 +3,7 @@ import { getSettingsMap } from '@/lib/settings'
 
 export default async function ContactPage() {
   const settings = await getSettingsMap()
-  const phone = settings.company_phone || '+10000000000'
+  const phone = settings.company_phone || '+260975555555'
   const whatsapp = settings.social_whatsapp || `https://wa.me/${phone.replace(/[^0-9]/g, '')}`
   const address = settings.company_address || '123 Example Street, Suite 100, 00000 Demo City, Demo Country'
   const companyName = settings.company_name || 'Zikulu  Demo'

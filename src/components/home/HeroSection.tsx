@@ -60,7 +60,7 @@ export default function HeroSection({
               <span className="text-[var(--ink-soft)]">
                 From{' '}
                 <span className="font-display text-lg text-[var(--ink)] tabular-nums">
-                  &euro;{fromRate}
+                  ZMW {fromRate}
                 </span>{' '}
                 per day
               </span>

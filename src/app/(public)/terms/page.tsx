@@ -59,7 +59,7 @@ export default async function TermsPage() {
             <li>Cancellations made more than 48 hours before the rental start date are fully refunded.</li>
             <li>Cancellations made 24–48 hours before: 50% refund.</li>
             <li>Cancellations made less than 24 hours before: no refund.</li>
-            <li>To cancel or modify, contact us at +1 000 000 0000.</li>
+            <li>To cancel or modify, contact us at +260975555555.</li>
           </ul>
 
           <h2>5. Insurance & Liability</h2>

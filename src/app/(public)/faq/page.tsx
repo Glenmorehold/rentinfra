@@ -73,7 +73,7 @@ export default async function FaqPage() {
                 className="flex items-center justify-center gap-2 bg-green-600 text-white px-5 py-2.5 rounded-lg hover:bg-green-700 transition-colors text-sm font-medium">
                 <MessageCircle size={16} /> WhatsApp Us
               </a>
-              <a href="tel:+10000000000"
+              <a href="tel:+260975555555"
                 className="flex items-center justify-center gap-2 bg-[#C9A84C] text-[#0A1F44] px-5 py-2.5 rounded-lg hover:bg-yellow-400 transition-colors text-sm font-bold">
                 <Phone size={16} /> Call Us
               </a>
