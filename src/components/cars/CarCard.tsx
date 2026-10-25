@@ -14,7 +14,7 @@ const SPEC_ICONS = {
 
 
 const TYPE_STYLE: Record<string, { color: string; bg: string }> = {
-  car:       { color: 'text-blue-700',    bg: 'bg-blue-50' },
+  Car:       { color: 'text-blue-700',    bg: 'bg-blue-50' },
   motorbike: { color: 'text-orange-700',  bg: 'bg-orange-50' },
   bicycle:   { color: 'text-emerald-700', bg: 'bg-emerald-50' },
 }
