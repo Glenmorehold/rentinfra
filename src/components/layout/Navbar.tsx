@@ -18,7 +18,7 @@ export default function Navbar({ user, isAdmin, settings = {} }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false)
 
   const companyName = settings.company_name || 'Zikulu  Demo'
-  const phone = settings.company_phone || '+260 975555555'
+  const phone = settings.company_phone || '+260975555555'
   const whatsapp = settings.social_whatsapp || `https://wa.me/${phone.replace(/[^0-9]/g, '')}`
   const officeHoursOpen = settings.office_hours_open || '08:00'
   const officeHoursClose = settings.office_hours_close || '20:00'
