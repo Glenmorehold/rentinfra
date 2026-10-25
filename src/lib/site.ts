@@ -2,7 +2,7 @@
  * The site's own public URL.
  *
  * SEO metadata (canonical links, Open Graph, sitemap, JSON-LD) used to hardcode
- * `https://rentinfra.com` in a dozen files, so every fork advertised someone
+ * `https://Zikulu .com` in a dozen files, so every fork advertised someone
  * else's domain as canonical — which tells search engines the fork is a
  * duplicate of a site it has nothing to do with.
  *
@@ -18,5 +18,5 @@ export function absoluteUrl(path = ''): string {
   return `${SITE_URL}${path.startsWith('/') || path === '' ? path : `/${path}`}`
 }
 
-/** Hostname without protocol, for display: "demo.rentinfra.infranomad.com" */
+/** Hostname without protocol, for display: "demo.Zikulu .infranomad.com" */
 export const SITE_HOST = SITE_URL.replace(/^https?:\/\//, '')

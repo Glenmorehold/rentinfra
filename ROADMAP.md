@@ -1,6 +1,6 @@
-# RentInfra Roadmap
+# Zikulu  Roadmap
 
-What a working car rental business needs, what RentInfra has today, and what to build next.
+What a working car rental business needs, what Zikulu  has today, and what to build next.
 
 The gap analysis below compares this codebase against the feature set common to commercial
 rental platforms (Nomora, Booqable, TopRentApp, CAMASYS, Fleet HQ and similar), plus the

@@ -11,7 +11,7 @@ import { CATEGORIES_BY_TYPE } from '@/lib/vehicles'
 import type { VehicleType } from '@/types'
 
 export const metadata: Metadata = {
-  title: 'Our Fleet — Cars, Motorbikes & Bicycles | RentInfra',
+  title: 'Our Fleet — Cars, Motorbikes & Bicycles | Zikulu ',
   description: 'Browse our full fleet — cars, motorbikes and bicycles. Airport pickup and hotel delivery available.',
   keywords: 'car rental fleet, economy car hire, suv rental, luxury car rental',
   alternates: { canonical: absoluteUrl('/cars') },

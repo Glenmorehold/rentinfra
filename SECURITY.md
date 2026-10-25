@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-If you find a security issue in RentInfra — an RLS gap, an auth bypass, a way to reach an
+If you find a security issue in Zikulu  — an RLS gap, an auth bypass, a way to reach an
 admin-only route without `requireAdmin()`, exposure of a secret, or anything else — please
 **do not open a public GitHub issue**.
 
@@ -19,7 +19,7 @@ stay anonymous.
 
 ## Scope notes for this project
 
-RentInfra is a boilerplate that real businesses fork and deploy with their own Supabase project,
+Zikulu  is a boilerplate that real businesses fork and deploy with their own Supabase project,
 Stripe account, and customer data. A few things worth knowing if you're auditing it:
 
 - **Secrets** (Stripe, Resend, Twilio, OTA keys) live in the `settings` table with
@@ -41,7 +41,7 @@ Stripe account, and customer data. A few things worth knowing if you're auditing
   plaintext columns where noted in code comments — this is a known gap, not something you need
   to report, but PRs improving it are welcome.
 
-Out of scope: the shared public demo at demo.rentinfra.infranomad.com is reset periodically and
+Out of scope: the shared public demo at demo.Zikulu .infranomad.com is reset periodically and
 intentionally has no real customer data — issues specific to that instance (rather than the
 codebase itself) aren't a priority to report.
 

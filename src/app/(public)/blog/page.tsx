@@ -6,11 +6,11 @@ import { Calendar, Tag } from 'lucide-react'
 import { absoluteUrl } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Car Rental Tips & Travel Guide | RentInfra Blog',
+  title: 'Car Rental Tips & Travel Guide | Zikulu  Blog',
   description: 'Expert tips on renting a car, the best road trips, and your complete travel guide.',
   keywords: 'travel guide, road trips, car rental tips, things to do',
   openGraph: {
-    title: 'RentInfra Blog — Travel Tips & Driving Guides',
+    title: 'Zikulu  Blog — Travel Tips & Driving Guides',
     description: 'Explore the best drives, hidden gems and travel tips.',
     url: absoluteUrl('/blog'),
     type: 'website',

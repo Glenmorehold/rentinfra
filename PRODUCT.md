@@ -11,11 +11,11 @@ web
 Two audiences, roughly equal weight:
 
 - **Small/independent rental operators** — car, motorbike, or bicycle rental businesses
-  (often single-location) evaluating RentInfra to run real bookings and payments without
+  (often single-location) evaluating Zikulu  to run real bookings and payments without
   building or buying a bespoke system. May fork and deploy it themselves or hand it to
   someone else to stand up.
 - **Developers/agencies building for a client** — freelancers or small agencies who fork,
-  deploy, and customize RentInfra as the technical stack behind a rental business's public
+  deploy, and customize Zikulu  as the technical stack behind a rental business's public
   site and admin panel, then hand off or maintain it for that client.
 
 Both groups touch the same repo and docs (README, DEPLOY.md, CLAUDE.md); the operator cares
@@ -24,7 +24,7 @@ developer/agency cares about forking, deploying, and configuring it correctly.
 
 ## Product Purpose
 
-RentInfra is an open-source, MIT-licensed vehicle rental SaaS boilerplate — public booking
+Zikulu  is an open-source, MIT-licensed vehicle rental SaaS boilerplate — public booking
 site plus admin panel — meant to be forked, deployed, and rebranded into a real, operating
 rental business, not evaluated as a demo or portfolio piece. Success is a fork that goes live
 and actually takes paid bookings for real vehicles.
@@ -32,7 +32,7 @@ and actually takes paid bookings for real vehicles.
 ## Positioning
 
 Actually runs a rental business, not just a demo. Most open-source booking-form boilerplates
-stop at "customer picks dates and submits a form." RentInfra ships the parts that make that
+stop at "customer picks dates and submits a form." Zikulu  ships the parts that make that
 booking real and operational: real Stripe payments (with 3D Secure), a database-level
 availability system that is structurally impossible to double-book, e-signature capture and
 licence verification at handover, condition-report photos and damage claims, fleet
@@ -58,7 +58,7 @@ claim the same.
   its own credentials are configured — a fresh deploy is usable with zero integrations
   configured beyond Supabase.
 - Multi-language: EN/ES shipped via next-intl; DE/RU are an open roadmap item.
-- Live demo (`demo.rentinfra.infranomad.com`) is public, shared, and periodically reset —
+- Live demo (`demo.Zikulu .infranomad.com`) is public, shared, and periodically reset —
   not representative of a real operator's data.
 
 ## Capabilities and Constraints
@@ -83,11 +83,11 @@ claim the same.
 
 ## Brand Commitments
 
-No protected brand identity — RentInfra ships **placeholder branding meant to be replaced by
+No protected brand identity — Zikulu  ships **placeholder branding meant to be replaced by
 whoever forks it**, not a permanent look to preserve. Confirmed as of this init:
 
 - Navy (`#0A1F44`) / Gold (`#C9A84C`) color system, Inter (body/UI) + Playfair Display
-  (hero/display) fonts, and the "RentInfra" name are the current placeholder identity,
+  (hero/display) fonts, and the "Zikulu " name are the current placeholder identity,
   documented in CLAUDE.md's UI Design System section.
 - No real logo, wordmark, or custom favicon exists — `public/` only has the Next.js
   scaffold's default SVGs (`file.svg`, `globe.svg`, `next.svg`, `vercel.svg`, `window.svg`)
@@ -98,7 +98,7 @@ whoever forks it**, not a permanent look to preserve. Confirmed as of this init:
 
 ## Evidence on Hand
 
-- Live demo at `demo.rentinfra.infranomad.com` with seeded fake fleet/bookings
+- Live demo at `demo.Zikulu .infranomad.com` with seeded fake fleet/bookings
   (`supabase/migrations/demo_seed.sql`) — real screenshots/flows can be captured there, but
   the data itself (testimonials, bookings, fleet) is fictional and must not be treated as
   real customer evidence in marketing copy.
@@ -115,7 +115,7 @@ whoever forks it**, not a permanent look to preserve. Confirmed as of this init:
 2. **Inert until configured, never fake.** Integrations (payments, email, WhatsApp/SMS, OTA)
    default off and stay silently inert without credentials rather than mocking success —
    a forker should never be misled about what's actually connected.
-3. **Placeholder identity, not a locked brand.** The current navy/gold look and "RentInfra"
+3. **Placeholder identity, not a locked brand.** The current navy/gold look and "Zikulu "
    name exist to be replaced; design and copy decisions should keep the fork path cheap
    rather than deepen investment in a throwaway identity.
 4. **One source of truth per concern.** Availability, pricing, secrets, and n8n-style version

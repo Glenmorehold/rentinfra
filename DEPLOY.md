@@ -1,6 +1,6 @@
-# Deploying RentInfra
+<!-- # Deploying Zikulu 
 
-A complete, start-to-finish guide to running RentInfra on **Vercel** with a **Supabase** backend.
+A complete, start-to-finish guide to running Zikulu  on **Vercel** with a **Supabase** backend.
 
 Estimated time: ~20 minutes.
 
@@ -23,14 +23,14 @@ Estimated time: ~20 minutes.
 
 ## Try the live demo first
 
-Before deploying your own, you can explore a fully working instance — public site and admin panel — at **[demo.rentinfra.infranomad.com](https://demo.rentinfra.infranomad.com)**.
+Before deploying your own, you can explore a fully working instance — public site and admin panel — at **[demo.Zikulu .infranomad.com](https://demo.Zikulu .infranomad.com)**.
 
-Sign in at [`/auth/login`](https://demo.rentinfra.infranomad.com/auth/login) with either account:
+Sign in at [`/auth/login`](https://demo.Zikulu .infranomad.com/auth/login) with either account:
 
 | Role | Email | Password | What you can see |
 |------|-------|----------|------------------|
-| **Admin** | `admin@rentinfra.demo` | `RentInfraDemo2026!` | The full admin panel at `/admin` — bookings, cars, addons, users, locations, settings, and PDF rental contracts |
-| **Customer** | `user@rentinfra.demo` | `RentInfraDemo2026!` | The customer view — profile and booking history |
+| **Admin** | `admin@Zikulu .demo` | `Zikulu Demo2026!` | The full admin panel at `/admin` — bookings, cars, addons, users, locations, settings, and PDF rental contracts |
+| **Customer** | `user@Zikulu .demo` | `Zikulu Demo2026!` | The customer view — profile and booking history |
 
 You can also browse the public site, complete the booking wizard, and look up a booking at `/my-booking` without signing in at all.
 
@@ -51,8 +51,8 @@ first admin) — see below for why those can't be automated away.
 1. Fork the repo on GitHub, then link it as a new Vercel project:
    ```bash
    npm i -g vercel@latest
-   git clone https://github.com/<you>/rentinfra.git
-   cd rentinfra
+   git clone https://github.com/<you>/Zikulu .git
+   cd Zikulu 
    vercel link
    ```
 2. Provision Supabase through the Marketplace — this creates a Supabase project and injects its
@@ -109,8 +109,8 @@ you're not deploying on Vercel at all) and don't need repeating.
 Fork or clone the repo:
 
 ```bash
-git clone https://github.com/j4b3r/rentinfra.git
-cd rentinfra
+git clone https://github.com/j4b3r/Zikulu .git
+cd Zikulu 
 npm install
 ```
 
@@ -172,7 +172,7 @@ Go to **Table Editor**. You should see the full set of tables including `cars`, 
 
 ## 4. Collect your environment variables
 
-RentInfra needs four required variables, plus one strongly recommended secret for the two scheduled jobs.
+Zikulu  needs four required variables, plus one strongly recommended secret for the two scheduled jobs.
 
 In your Supabase project, go to **Project Settings → API Keys**:
 
@@ -206,7 +206,7 @@ npm run dev
 
 ### Option A — One-click
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/j4b3r/rentinfra&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY,SUPABASE_SERVICE_ROLE_KEY,NEXT_PUBLIC_SITE_URL&envDescription=Supabase%20credentials%20and%20your%20public%20site%20URL&envLink=https://github.com/j4b3r/rentinfra/blob/main/DEPLOY.md%234-collect-your-environment-variables)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/j4b3r/Zikulu &env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY,SUPABASE_SERVICE_ROLE_KEY,NEXT_PUBLIC_SITE_URL&envDescription=Supabase%20credentials%20and%20your%20public%20site%20URL&envLink=https://github.com/j4b3r/Zikulu /blob/main/DEPLOY.md%234-collect-your-environment-variables)
 
 Vercel will clone the repo and prompt for the four variables during import.
 
@@ -244,7 +244,7 @@ New Vercel projects may enable **Deployment Protection**, which puts every URL b
 
 ## 5b. Connect email and payments (optional)
 
-RentInfra keeps third-party credentials in the database, not in environment variables, so you
+Zikulu  keeps third-party credentials in the database, not in environment variables, so you
 manage them from **Admin → Settings → Integrations** after deploying. Nothing here is required
 to take bookings — without it, bookings are recorded but no email is sent and no payment is
 collected.
@@ -253,7 +253,7 @@ collected.
 
 1. Create an account at [resend.com](https://resend.com) and verify the domain you want to send from.
 2. Create an API key under **API Keys**.
-3. In RentInfra, go to **Settings → Integrations**, paste the key, set **Send from** to an
+3. In Zikulu , go to **Settings → Integrations**, paste the key, set **Send from** to an
    address on your verified domain, and press **Test connection**.
 4. Once the test passes, tick **Enable email** and save.
 
@@ -427,4 +427,4 @@ Confirm `001_schema.sql` ran and that a public `car-images` bucket exists under 
 Free projects pause after a week of inactivity. Restore it from the dashboard, or upgrade for anything customer-facing.
 
 **Build fails on Vercel but works locally**
-Run `npm run build` locally against a clean install (`rm -rf .next node_modules && npm install`). Also confirm all four env vars exist for the **Production** environment, not just Development.
+Run `npm run build` locally against a clean install (`rm -rf .next node_modules && npm install`). Also confirm all four env vars exist for the **Production** environment, not just Development. -->

@@ -1,5 +1,5 @@
 -- ============================================================
--- RentInfra — full database schema
+-- Zikulu  — full database schema
 -- ============================================================
 --
 -- Consolidated from what were previously 13 incremental migrations
@@ -14,7 +14,7 @@
 
 -- ── from 001_initial_schema.sql ──────────────────────────────────────────
 -- ============================================================
--- RentInfra - Initial Schema
+-- Zikulu  - Initial Schema
 -- ============================================================
 
 -- Enable UUID extension
@@ -430,7 +430,7 @@ INSERT INTO public.settings (key, value, type, description) VALUES
 ('currency', 'EUR', 'string', 'Default currency'),
 ('tax_rate', '0', 'number', 'Tax rate percentage (IVA)'),
 ('company_phone', '+10000000000', 'string', 'Company phone and WhatsApp'),
-('company_email', 'info@rentinfra.com', 'string', 'Company contact email'),
+('company_email', 'info@Zikulu .com', 'string', 'Company contact email'),
 ('company_address', '123 Example Street, Suite 100, 00000 Demo City, Demo Country', 'string', 'Company address');
 
 -- Locations
@@ -504,7 +504,7 @@ CREATE TABLE public.blog_posts (
   content_en TEXT,
   content_es TEXT,
   cover_image TEXT,
-  author TEXT DEFAULT 'RentInfra',
+  author TEXT DEFAULT 'Zikulu ',
   tags TEXT[],
   is_published BOOLEAN DEFAULT TRUE,
   published_at TIMESTAMPTZ DEFAULT NOW(),
@@ -544,9 +544,9 @@ CREATE POLICY "faqs_admin_all" ON public.faqs FOR ALL USING (is_admin());
 -- Add social media + extra settings
 -- ============================================================
 INSERT INTO public.settings (key, value, type, description) VALUES
-('social_facebook', 'https://facebook.com/rentinfra', 'string', 'Facebook page URL'),
-('social_instagram', 'https://instagram.com/rentinfra', 'string', 'Instagram profile URL'),
-('social_tiktok', 'https://tiktok.com/@rentinfra', 'string', 'TikTok profile URL'),
+('social_facebook', 'https://facebook.com/Zikulu ', 'string', 'Facebook page URL'),
+('social_instagram', 'https://instagram.com/Zikulu ', 'string', 'Instagram profile URL'),
+('social_tiktok', 'https://tiktok.com/@Zikulu ', 'string', 'TikTok profile URL'),
 ('social_whatsapp', 'https://wa.me/10000000000', 'string', 'WhatsApp link')
 ON CONFLICT (key) DO NOTHING;
 
@@ -571,8 +571,8 @@ INSERT INTO public.blog_posts (slug, title_en, title_es, excerpt_en, excerpt_es,
   'Guía Completa del Casco Antiguo',
   'Explore the cobblestone streets, orange-blossom squares and hidden tapas bars of the historic old town — best explored with your own rental car.',
   'Explora las calles empedradas, las plazas con naranjos y los bares de tapas escondidos del casco histórico.',
-  '<h2>The Heart of the Old Town</h2><p>Tucked behind the gleaming marina and modern hotels, the historic Old Town is a maze of whitewashed houses draped in bougainvillea, narrow cobblestone lanes, and sun-drenched plazas. It''s one of the most beautifully preserved historic centres in the region.</p><h2>The Central Square</h2><p>The centrepiece of the old town, the central square dates back centuries. Surrounded by historic buildings, outdoor restaurants and the town hall, it''s the perfect place to start your exploration over a coffee.</p><h2>The Old Town Churches</h2><p>Don''t miss the historic church, built on the site of a former place of worship. Nearby you''ll find one of the oldest buildings in the area.</p><h2>Best Tapas Bars</h2><p>Wander away from the main square to find authentic tapas bars frequented by locals for some of the best local dishes on the coast.</p><h2>Getting There</h2><p>The Old Town is just a short drive from our demo location. With a <a href="/cars">rental car from RentInfra</a>, you can park nearby and walk into the old town in minutes.</p>',
-  '<h2>El Corazón del Casco Antiguo</h2><p>Escondido detrás de la brillante marina y los hoteles modernos, el Casco Antiguo es un laberinto de casas encaladas adornadas con buganvillas, callejuelas empedradas y plazas soleadas.</p><h2>La Plaza Central</h2><p>El corazón del casco antiguo, la plaza central data de hace siglos. Rodeada de edificios históricos, restaurantes al aire libre y el ayuntamiento, es el lugar perfecto para comenzar tu exploración.</p><h2>Las Iglesias del Casco Antiguo</h2><p>No te pierdas la iglesia histórica, construida sobre el emplazamiento de un antiguo lugar de culto.</p><h2>Mejores Bares de Tapas</h2><p>Aléjate de la plaza principal para encontrar auténticos bares de tapas frecuentados por locales.</p><h2>Cómo Llegar</h2><p>El Casco Antiguo está a poca distancia de nuestra ubicación demo. Con un <a href="/cars">coche de alquiler de RentInfra</a>, puedes aparcar y entrar andando en pocos minutos.</p>',
+  '<h2>The Heart of the Old Town</h2><p>Tucked behind the gleaming marina and modern hotels, the historic Old Town is a maze of whitewashed houses draped in bougainvillea, narrow cobblestone lanes, and sun-drenched plazas. It''s one of the most beautifully preserved historic centres in the region.</p><h2>The Central Square</h2><p>The centrepiece of the old town, the central square dates back centuries. Surrounded by historic buildings, outdoor restaurants and the town hall, it''s the perfect place to start your exploration over a coffee.</p><h2>The Old Town Churches</h2><p>Don''t miss the historic church, built on the site of a former place of worship. Nearby you''ll find one of the oldest buildings in the area.</p><h2>Best Tapas Bars</h2><p>Wander away from the main square to find authentic tapas bars frequented by locals for some of the best local dishes on the coast.</p><h2>Getting There</h2><p>The Old Town is just a short drive from our demo location. With a <a href="/cars">rental car from Zikulu </a>, you can park nearby and walk into the old town in minutes.</p>',
+  '<h2>El Corazón del Casco Antiguo</h2><p>Escondido detrás de la brillante marina y los hoteles modernos, el Casco Antiguo es un laberinto de casas encaladas adornadas con buganvillas, callejuelas empedradas y plazas soleadas.</p><h2>La Plaza Central</h2><p>El corazón del casco antiguo, la plaza central data de hace siglos. Rodeada de edificios históricos, restaurantes al aire libre y el ayuntamiento, es el lugar perfecto para comenzar tu exploración.</p><h2>Las Iglesias del Casco Antiguo</h2><p>No te pierdas la iglesia histórica, construida sobre el emplazamiento de un antiguo lugar de culto.</p><h2>Mejores Bares de Tapas</h2><p>Aléjate de la plaza principal para encontrar auténticos bares de tapas frecuentados por locales.</p><h2>Cómo Llegar</h2><p>El Casco Antiguo está a poca distancia de nuestra ubicación demo. Con un <a href="/cars">coche de alquiler de Zikulu </a>, puedes aparcar y entrar andando en pocos minutos.</p>',
   'https://images.unsplash.com/photo-1555993539-1732b0258235?w=1200&q=80',
   ARRAY['old town', 'sightseeing', 'culture']
 ),
@@ -582,8 +582,8 @@ INSERT INTO public.blog_posts (slug, title_en, title_es, excerpt_en, excerpt_es,
   'Aeropuerto al Centro: Tu Guía Completa de Traslado',
   'Everything you need to know about getting from the airport to downtown — including why renting a car is the smartest choice.',
   'Todo lo que necesitas saber sobre cómo llegar desde el aeropuerto al centro, incluyendo por qué alquilar un coche es la opción más inteligente.',
-  '<h2>Distance & Time</h2><p>The demo airport is located approximately 60km from downtown. By car, the journey takes around 45–55 minutes via the toll motorway, or 60–75 minutes via the free coastal road.</p><h2>Your Transfer Options</h2><h3>Rental Car — The Best Option</h3><p>Renting a car at the airport gives you complete freedom from the moment you land. With <a href="/">RentInfra</a>, we can deliver your car directly to the airport arrivals hall, so you can drive straight to your hotel or villa. No waiting for transfers, no fixed schedules.</p><h3>Taxi</h3><p>A taxi from the airport to downtown costs approximately €80–€100 and takes around 50 minutes. It''s convenient but expensive, especially for families or longer stays.</p><h3>Bus</h3><p>A local bus company operates a direct service from the airport to the downtown bus station. Journey time is approximately 45 minutes and costs around €10. Services run regularly throughout the day.</p><h2>Tips for Your Arrival</h2><ul><li>The toll road is faster and costs approximately €4–€6</li><li>Traffic can be heavy during peak season — allow extra time</li><li>Fuel stations are available just outside the airport</li></ul><h2>Book Your Airport Car Rental</h2><p>RentInfra offers airport delivery with no extra hassle. <a href="/cars">Browse our fleet</a> and select the airport as your pickup location when booking.</p>',
-  '<h2>Distancia y Tiempo</h2><p>El aeropuerto demo está situado a aproximadamente 60 km del centro. En coche, el trayecto dura unos 45-55 minutos por la autopista de peaje, o 60-75 minutos por la carretera costera gratuita.</p><h2>Tus Opciones de Traslado</h2><h3>Coche de Alquiler — La Mejor Opción</h3><p>Alquilar un coche en el aeropuerto te da libertad total desde el momento en que aterrizas. Con <a href="/">RentInfra</a>, podemos entregar tu coche directamente en la terminal de llegadas.</p><h3>Taxi</h3><p>Un taxi desde el aeropuerto al centro cuesta aproximadamente €80-€100 y tarda unos 50 minutos.</p><h3>Autobús</h3><p>Una compañía de autobuses local opera un servicio directo desde el aeropuerto hasta la estación de autobuses del centro. El tiempo de trayecto es de aproximadamente 45 minutos y cuesta unos €10.</p><h2>Reserva tu Coche de Alquiler en el Aeropuerto</h2><p>RentInfra ofrece entrega en el aeropuerto. <a href="/cars">Consulta nuestra flota</a> y selecciona el aeropuerto como lugar de recogida al reservar.</p>',
+  '<h2>Distance & Time</h2><p>The demo airport is located approximately 60km from downtown. By car, the journey takes around 45–55 minutes via the toll motorway, or 60–75 minutes via the free coastal road.</p><h2>Your Transfer Options</h2><h3>Rental Car — The Best Option</h3><p>Renting a car at the airport gives you complete freedom from the moment you land. With <a href="/">Zikulu </a>, we can deliver your car directly to the airport arrivals hall, so you can drive straight to your hotel or villa. No waiting for transfers, no fixed schedules.</p><h3>Taxi</h3><p>A taxi from the airport to downtown costs approximately €80–€100 and takes around 50 minutes. It''s convenient but expensive, especially for families or longer stays.</p><h3>Bus</h3><p>A local bus company operates a direct service from the airport to the downtown bus station. Journey time is approximately 45 minutes and costs around €10. Services run regularly throughout the day.</p><h2>Tips for Your Arrival</h2><ul><li>The toll road is faster and costs approximately €4–€6</li><li>Traffic can be heavy during peak season — allow extra time</li><li>Fuel stations are available just outside the airport</li></ul><h2>Book Your Airport Car Rental</h2><p>Zikulu  offers airport delivery with no extra hassle. <a href="/cars">Browse our fleet</a> and select the airport as your pickup location when booking.</p>',
+  '<h2>Distancia y Tiempo</h2><p>El aeropuerto demo está situado a aproximadamente 60 km del centro. En coche, el trayecto dura unos 45-55 minutos por la autopista de peaje, o 60-75 minutos por la carretera costera gratuita.</p><h2>Tus Opciones de Traslado</h2><h3>Coche de Alquiler — La Mejor Opción</h3><p>Alquilar un coche en el aeropuerto te da libertad total desde el momento en que aterrizas. Con <a href="/">Zikulu </a>, podemos entregar tu coche directamente en la terminal de llegadas.</p><h3>Taxi</h3><p>Un taxi desde el aeropuerto al centro cuesta aproximadamente €80-€100 y tarda unos 50 minutos.</p><h3>Autobús</h3><p>Una compañía de autobuses local opera un servicio directo desde el aeropuerto hasta la estación de autobuses del centro. El tiempo de trayecto es de aproximadamente 45 minutos y cuesta unos €10.</p><h2>Reserva tu Coche de Alquiler en el Aeropuerto</h2><p>Zikulu  ofrece entrega en el aeropuerto. <a href="/cars">Consulta nuestra flota</a> y selecciona el aeropuerto como lugar de recogida al reservar.</p>',
   'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80',
   ARRAY['airport', 'transfer', 'travel tips']
 );
@@ -602,8 +602,8 @@ INSERT INTO public.faqs (question_en, question_es, answer_en, answer_es, categor
 (
   'What is the minimum age to rent a car?',
   '¿Cuál es la edad mínima para alquilar un coche?',
-  'The minimum age to rent a car with RentInfra is 21 years old. Drivers aged 21–24 may be subject to a young driver surcharge. This can be configured by our team.',
-  'La edad mínima para alquilar un coche con RentInfra es de 21 años. Los conductores de entre 21 y 24 años pueden estar sujetos a un suplemento por conductor joven.',
+  'The minimum age to rent a car with Zikulu  is 21 years old. Drivers aged 21–24 may be subject to a young driver surcharge. This can be configured by our team.',
+  'La edad mínima para alquilar un coche con Zikulu  es de 21 años. Los conductores de entre 21 y 24 años pueden estar sujetos a un suplemento por conductor joven.',
   'requirements', 2
 ),
 (
@@ -671,8 +671,8 @@ INSERT INTO public.faqs (question_en, question_es, answer_en, answer_es, categor
 INSERT INTO public.settings (key, value, type, description) VALUES
 
 -- General
-('company_name',        'RentInfra Demo',                          'string',  'Business trading name'),
-('company_website',     'https://rentinfra.com',               'string',  'Public website URL'),
+('company_name',        'Zikulu  Demo',                          'string',  'Business trading name'),
+('company_website',     'https://Zikulu .com',               'string',  'Public website URL'),
 ('google_maps_url',     '',                                        'string',  'Google Maps link to office'),
 
 -- Booking Policy
@@ -683,12 +683,12 @@ INSERT INTO public.settings (key, value, type, description) VALUES
 ('terms_last_updated',      '2025-01-01', 'string', 'Date terms & conditions were last updated'),
 
 -- Notifications
-('notify_admin_email',      'info@rentinfra.com', 'string',  'Email address that receives new booking alerts'),
+('notify_admin_email',      'info@Zikulu .com', 'string',  'Email address that receives new booking alerts'),
 ('notify_new_booking',      'true',   'boolean', 'Send email alert to admin on new booking'),
 ('notify_booking_confirm',  'true',   'boolean', 'Send confirmation email to customer on booking'),
 ('notify_whatsapp_enabled', 'false',  'boolean', 'Send WhatsApp message to customer on booking'),
-('smtp_from_name',          'RentInfra Demo', 'string', 'Sender name for outgoing emails'),
-('smtp_from_email',         'noreply@rentinfra.com', 'string', 'Sender email address for outgoing emails')
+('smtp_from_name',          'Zikulu  Demo', 'string', 'Sender name for outgoing emails'),
+('smtp_from_email',         'noreply@Zikulu .com', 'string', 'Sender email address for outgoing emails')
 
 ON CONFLICT (key) DO NOTHING;
 

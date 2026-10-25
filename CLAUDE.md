@@ -1,14 +1,14 @@
-# CLAUDE.md
+<!-- # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
 
-RentInfra — an open-source car rental SaaS boilerplate. It ships as a full car rental booking website (public site, booking wizard, admin panel) with generic placeholder branding and content, meant to be forked/deployed and customized for a real car rental business. Deployed on Vercel, database on Supabase.
+Zikulu  — an open-source car rental SaaS boilerplate. It ships as a full car rental booking website (public site, booking wizard, admin panel) with generic placeholder branding and content, meant to be forked/deployed and customized for a real car rental business. Deployed on Vercel, database on Supabase.
 
-- **Live demo**: https://demo.rentinfra.infranomad.com (replace with your own domain)
+- **Live demo**: https://demo.Zikulu .infranomad.com (replace with your own domain)
 - **Stack**: Next.js 16 (App Router), Tailwind CSS, Supabase (PostgreSQL + Auth + Storage), next-intl (EN/ES), Vitest
-- **Repo**: github.com/j4b3r/rentinfra
+- **Repo**: github.com/j4b3r/Zikulu 
 - **License**: MIT
 
 ## Commands
@@ -280,4 +280,4 @@ See **[ROADMAP.md](./ROADMAP.md)** for the full, current gap analysis against co
 platforms. As of this file's last edit, the genuinely open items are: German + Russian
 translations, rate management (day-of-week rates, blackout dates, per-location pricing), inbound
 OTA booking ingestion, deposit pre-authorization/release, and inter-branch transfer tracking for
-one-way rentals — everything else in prior versions of this list has since shipped.
+one-way rentals — everything else in prior versions of this list has since shipped. -->

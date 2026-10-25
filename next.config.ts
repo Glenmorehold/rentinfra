@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
       {
         // TODO: replace with your own deployment's domain if you host images there
         protocol: 'https',
-        hostname: 'rentinfra.com',
+        hostname: 'Zikulu .com',
       },
     ],
   },

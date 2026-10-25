@@ -8,7 +8,7 @@ import SignOutButton from '@/components/account/SignOutButton'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'My Account | RentInfra',
+  title: 'My Account | Zikulu ',
   robots: { index: false, follow: false },
 }
 

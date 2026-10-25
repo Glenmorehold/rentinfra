@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { data: post } = await supabase.from('blog_posts').select('*').eq('slug', slug).single()
   if (!post) return {}
   return {
-    title: `${post.title_en} | RentInfra Blog`,
+    title: `${post.title_en} | Zikulu  Blog`,
     description: post.excerpt_en,
     keywords: post.tags?.join(', '),
     openGraph: {
@@ -45,10 +45,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     description: post.excerpt_en,
     image: post.cover_image,
     datePublished: post.published_at,
-    author: { '@type': 'Organization', name: 'RentInfra' },
+    author: { '@type': 'Organization', name: 'Zikulu ' },
     publisher: {
       '@type': 'Organization',
-      name: 'RentInfra',
+      name: 'Zikulu ',
       url: SITE_URL,
     },
   }
@@ -108,7 +108,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <div className="mt-10 pt-6 border-t border-gray-200">
             <div className="bg-[#0A1F44] rounded-xl p-6 text-center">
               <p className="text-white font-bold text-lg mb-2">Ready to explore the Costa del Sol?</p>
-              <p className="text-gray-400 text-sm mb-4">Book your rental car from RentInfra — airport and hotel delivery available.</p>
+              <p className="text-gray-400 text-sm mb-4">Book your rental car from Zikulu  — airport and hotel delivery available.</p>
               <Link href="/cars"
                 className="inline-block bg-[#C9A84C] text-[#0A1F44] px-6 py-2.5 rounded-lg font-bold hover:bg-yellow-400 transition-colors">
                 Browse Our Fleet

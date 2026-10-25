@@ -1,12 +1,12 @@
 -- ============================================================
 -- demo_seed.sql — OPTIONAL demo content
 -- ============================================================
--- This migration is NOT required to run RentInfra. It exists to
--- populate the public live demo (demo.rentinfra / the Vercel
+-- This migration is NOT required to run Zikulu . It exists to
+-- populate the public live demo (demo.Zikulu  / the Vercel
 -- deployment) with a fuller fleet, car photos and sample bookings
 -- so visitors can see the product with realistic data.
 --
--- If you are forking RentInfra for a real business, SKIP this file.
+-- If you are forking Zikulu  for a real business, SKIP this file.
 -- Run only 001 -> 005. Everything below is fake.
 --
 -- Safe to re-run: all inserts are idempotent on slug/reference.
@@ -172,8 +172,8 @@ WHERE NOT EXISTS (
 -- ------------------------------------------------------------
 -- Demo-specific settings overrides
 -- ------------------------------------------------------------
-UPDATE public.settings SET value = 'RentInfra Demo'          WHERE key = 'company_name';
-UPDATE public.settings SET value = 'demo@rentinfra.example'  WHERE key = 'company_email';
+UPDATE public.settings SET value = 'Zikulu  Demo'          WHERE key = 'company_name';
+UPDATE public.settings SET value = 'demo@Zikulu .example'  WHERE key = 'company_email';
 
 -- ------------------------------------------------------------
 -- Demo motorbikes and bicycles (added with migration 012).

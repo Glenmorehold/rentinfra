@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 import { getSettingsMap } from '@/lib/settings'
 
 export const metadata: Metadata = {
-  title: 'Terms & Conditions | RentInfra Demo Car Rental',
-  description: 'Read the full terms and conditions for renting a car with RentInfra Demo.',
+  title: 'Terms & Conditions | Zikulu  Demo Car Rental',
+  description: 'Read the full terms and conditions for renting a car with Zikulu  Demo.',
 }
 
 export default async function TermsPage() {
@@ -28,7 +28,7 @@ export default async function TermsPage() {
           [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:text-gray-600 [&_ul]:mb-4">
 
           {/* TODO: replace company name, address and jurisdiction below with your own business details */}
-          <p>These Terms and Conditions govern the rental of vehicles from RentInfra Demo, operating from 123 Example Street, Suite 100, 00000 Demo City, Demo Country. By making a booking, you agree to these terms in full.</p>
+          <p>These Terms and Conditions govern the rental of vehicles from Zikulu  Demo, operating from 123 Example Street, Suite 100, 00000 Demo City, Demo Country. By making a booking, you agree to these terms in full.</p>
 
           <h2>1. Eligibility</h2>
           <ul>
@@ -91,7 +91,7 @@ export default async function TermsPage() {
           <p>These Terms are governed by the laws of the rental territory as defined in your agreement. Any disputes shall be subject to the jurisdiction of the courts of that territory.</p>
 
           <h2>9. Contact</h2>
-          <p>RentInfra Demo · 123 Example Street, Suite 100 · 00000 Demo City · Demo Country<br />
+          <p>Zikulu  Demo · 123 Example Street, Suite 100 · 00000 Demo City · Demo Country<br />
           {contactLine}</p>
         </div>
       </div>

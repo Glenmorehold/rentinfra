@@ -347,7 +347,7 @@ export function RentalContract({ booking: b, settings, lang, logoDataUrl, qrData
             <Image src={logoDataUrl} style={S.logoImg} />
           ) : null}
           <View style={S.companyBlock}>
-            <Text style={S.companyName}>{settings.company_name || 'RentInfra'}</Text>
+            <Text style={S.companyName}>{settings.company_name || 'Zikulu '}</Text>
             <Text style={S.companyInfo}>{settings.company_address}</Text>
             <Text style={S.companyInfo}>{settings.company_phone}  ·  {settings.company_email}</Text>
           </View>
@@ -518,7 +518,7 @@ export function RentalContract({ booking: b, settings, lang, logoDataUrl, qrData
             <Text style={S.signLabel}>{t.clientSign}</Text>
           </View>
           <View style={S.signBox}>
-            <Text style={S.signTop}>{settings.company_name || 'RentInfra'}</Text>
+            <Text style={S.signTop}>{settings.company_name || 'Zikulu '}</Text>
             {signMark(signatureDataUrls, 'contract', 'company')}
             <Text style={S.signLabel}>{t.companySign}</Text>
           </View>
@@ -542,7 +542,7 @@ export function RentalContract({ booking: b, settings, lang, logoDataUrl, qrData
         <View style={S.miniHeader}>
           {logoDataUrl ? <Image src={logoDataUrl} style={S.miniLogoImg} /> : null}
           <View style={S.miniCompany}>
-            <Text style={S.miniCompanyName}>{settings.company_name || 'RentInfra'}</Text>
+            <Text style={S.miniCompanyName}>{settings.company_name || 'Zikulu '}</Text>
             <Text style={S.miniCompanyInfo}>{settings.company_phone}  ·  {settings.company_email}</Text>
           </View>
           <View>
@@ -576,7 +576,7 @@ export function RentalContract({ booking: b, settings, lang, logoDataUrl, qrData
             <Text style={S.signLabel}>{t.page2ClientSign}</Text>
           </View>
           <View style={S.signBox}>
-            <Text style={S.signTop}>{settings.company_name || 'RentInfra'}</Text>
+            <Text style={S.signTop}>{settings.company_name || 'Zikulu '}</Text>
             {signMark(signatureDataUrls, 'delivery', 'company')}
             <Text style={S.signLabel}>{t.page2CompSign}</Text>
           </View>
@@ -616,7 +616,7 @@ export function RentalContract({ booking: b, settings, lang, logoDataUrl, qrData
               <Text style={S.signLabel}>{t.page2ClientSignReturn}</Text>
             </View>
             <View style={S.signBox}>
-              <Text style={S.signTop}>{settings.company_name || 'RentInfra'}</Text>
+              <Text style={S.signTop}>{settings.company_name || 'Zikulu '}</Text>
               {signMark(signatureDataUrls, 'return', 'company')}
               <Text style={S.signLabel}>{t.page2CompSignReturn}</Text>
             </View>

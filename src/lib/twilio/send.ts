@@ -199,7 +199,7 @@ export async function processMessageQueue(limit = 25): Promise<{
     const ctx: MessageContext = {
       reference: String(payload.reference ?? ''),
       name: String(payload.name ?? 'there'),
-      companyName: s.company_name || 'RentInfra',
+      companyName: s.company_name || 'Zikulu ',
       companyPhone: s.company_phone,
       carName: payload.carName ? String(payload.carName) : undefined,
       pickupDate: payload.pickupDate ? String(payload.pickupDate) : undefined,

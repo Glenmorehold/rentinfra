@@ -1,6 +1,6 @@
-# Contributing to RentInfra
+<!-- # Contributing to Zikulu 
 
-RentInfra is MIT-licensed and open to contributions — bug fixes, new features, translations,
+Zikulu  is MIT-licensed and open to contributions — bug fixes, new features, translations,
 documentation. This is a guide to working in the codebase, not a legal agreement.
 
 ## Before you start
@@ -13,8 +13,8 @@ seemingly small change can have wide blast radius (see "Where the sharp edges ar
 ## Local setup
 
 ```bash
-git clone https://github.com/j4b3r/rentinfra.git
-cd rentinfra
+git clone https://github.com/j4b3r/Zikulu .git
+cd Zikulu 
 npm install
 cp .env.example .env.local
 ```
@@ -97,4 +97,4 @@ locale should extend both the messages file and the locale-detection logic in
 ## Reporting security issues
 
 Don't open a public issue for a security vulnerability. See [SECURITY.md](./SECURITY.md) if
-present, or otherwise open a private report via GitHub's "Report a vulnerability" flow.
+present, or otherwise open a private report via GitHub's "Report a vulnerability" flow. -->

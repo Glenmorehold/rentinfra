@@ -5,11 +5,11 @@ import { getSettingsMap } from '@/lib/settings'
 import { absoluteUrl } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Customer Care | RentInfra Car Rental',
-  description: 'Get help with your RentInfra booking. Contact us by phone, WhatsApp or visit our office.',
+  title: 'Customer Care | Zikulu  Car Rental',
+  description: 'Get help with your Zikulu  booking. Contact us by phone, WhatsApp or visit our office.',
   keywords: 'car rental customer service, car rental help, contact car rental',
   openGraph: {
-    title: 'Customer Care — RentInfra',
+    title: 'Customer Care — Zikulu ',
     description: 'We\'re here to help. Contact our team by phone, WhatsApp or visit us.',
     url: absoluteUrl('/customer-care'),
   },

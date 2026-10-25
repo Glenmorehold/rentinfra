@@ -6,7 +6,7 @@ import { SITE_HOST } from '@/lib/site'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Payment received | RentInfra',
+  title: 'Payment received | Zikulu ',
   robots: { index: false, follow: false },
 }
 

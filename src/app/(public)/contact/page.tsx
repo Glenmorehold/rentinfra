@@ -6,7 +6,7 @@ export default async function ContactPage() {
   const phone = settings.company_phone || '+10000000000'
   const whatsapp = settings.social_whatsapp || `https://wa.me/${phone.replace(/[^0-9]/g, '')}`
   const address = settings.company_address || '123 Example Street, Suite 100, 00000 Demo City, Demo Country'
-  const companyName = settings.company_name || 'RentInfra Demo'
+  const companyName = settings.company_name || 'Zikulu  Demo'
   const officeHoursOpen = settings.office_hours_open || '08:00'
   const officeHoursClose = settings.office_hours_close || '20:00'
   const mapsUrl = settings.google_maps_url || ''

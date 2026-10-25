@@ -1,7 +1,7 @@
-# RentInfra
+# Zikulu 
 
-[![CI](https://github.com/j4b3r/rentinfra/actions/workflows/ci.yml/badge.svg)](https://github.com/j4b3r/rentinfra/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/j4b3r/rentinfra/actions/workflows/codeql.yml/badge.svg)](https://github.com/j4b3r/rentinfra/actions/workflows/codeql.yml)
+[![CI](https://github.com/j4b3r/Zikulu /actions/workflows/ci.yml/badge.svg)](https://github.com/j4b3r/Zikulu /actions/workflows/ci.yml)
+[![CodeQL](https://github.com/j4b3r/Zikulu /actions/workflows/codeql.yml/badge.svg)](https://github.com/j4b3r/Zikulu /actions/workflows/codeql.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 An open-source vehicle rental platform — cars, motorbikes and bicycles — free and MIT-licensed,
@@ -15,14 +15,14 @@ licence verification, fleet maintenance, and business reporting computed from re
 
 ## Live demo
 
-**→ [demo.rentinfra.infranomad.com](https://demo.rentinfra.infranomad.com)**
+**→ [demo.Zikulu .infranomad.com](https://demo.Zikulu .infranomad.com)**
 
 Sign in to try the full product, including the admin panel:
 
 | Role | Email | Password |
 |------|-------|----------|
-| Admin | `admin@rentinfra.demo` | `RentInfraDemo2026!` |
-| Customer | `user@rentinfra.demo` | `RentInfraDemo2026!` |
+| Admin | `admin@Zikulu.demo` | `ZikuluDemo2026!` |
+| Customer | `user@Zikulu.demo` | `ZikuluDemo2026!` |
 
 > The demo database is public, shared, and periodically reset — anything you change there may be wiped or altered by other visitors. Don't enter real personal data. The demo fleet and bookings are fake (seeded by the optional `supabase/migrations/demo_seed.sql`, which you should skip for a real deployment).
 
@@ -36,7 +36,7 @@ for the full sequence, including the one-time Build Command override that applie
 
 Deploying elsewhere, or want to manage Supabase directly? The manual path still works:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/j4b3r/rentinfra&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY,SUPABASE_SERVICE_ROLE_KEY,NEXT_PUBLIC_SITE_URL,CRON_SECRET&envDescription=Supabase%20credentials%2C%20your%20public%20site%20URL%2C%20and%20a%20secret%20for%20the%20scheduled%20jobs&envLink=https://github.com/j4b3r/rentinfra/blob/main/DEPLOY.md%234-collect-your-environment-variables)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/j4b3r/Zikulu &env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY,SUPABASE_SERVICE_ROLE_KEY,NEXT_PUBLIC_SITE_URL,CRON_SECRET&envDescription=Supabase%20credentials%2C%20your%20public%20site%20URL%2C%20and%20a%20secret%20for%20the%20scheduled%20jobs&envLink=https://github.com/j4b3r/Zikulu /blob/main/DEPLOY.md%234-collect-your-environment-variables)
 
 **[DEPLOY.md](./DEPLOY.md) is the full step-by-step guide** for both paths — Supabase setup,
 migrations, environment variables, Vercel deploy, auth configuration, custom domain, and
@@ -159,7 +159,7 @@ If you fork the repo, three GitHub Actions workflows come with it:
 
 ## Roadmap
 
-RentInfra covers the full booking funnel, payments, handover/compliance and admin panel.
+Zikulu  covers the full booking funnel, payments, handover/compliance and admin panel.
 **[ROADMAP.md](./ROADMAP.md)** compares it against commercial rental platforms, tracks what's
 shipped, and lays out what's left — inbound OTA/channel-manager sync, deposit pre-authorization,
 and German/Russian translations.

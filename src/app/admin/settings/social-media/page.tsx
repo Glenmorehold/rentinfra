@@ -13,9 +13,9 @@ export default async function SocialMediaSettings() {
       title="Social Media"
       description="Links shown in the website footer and contact pages."
       fields={[
-        { key: 'social_facebook',  label: 'Facebook URL',  type: 'url', placeholder: 'https://facebook.com/rentinfra' },
-        { key: 'social_instagram', label: 'Instagram URL', type: 'url', placeholder: 'https://instagram.com/rentinfra' },
-        { key: 'social_tiktok',    label: 'TikTok URL',    type: 'url', placeholder: 'https://tiktok.com/@rentinfra' },
+        { key: 'social_facebook',  label: 'Facebook URL',  type: 'url', placeholder: 'https://facebook.com/Zikulu ' },
+        { key: 'social_instagram', label: 'Instagram URL', type: 'url', placeholder: 'https://instagram.com/Zikulu ' },
+        { key: 'social_tiktok',    label: 'TikTok URL',    type: 'url', placeholder: 'https://tiktok.com/@Zikulu ' },
         { key: 'social_whatsapp',  label: 'WhatsApp Link', type: 'url', placeholder: 'https://wa.me/34697462569', description: 'Format: https://wa.me/[country code][number]' },
       ]}
       values={values}

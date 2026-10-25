@@ -38,9 +38,9 @@ export default function LoginPage() {
       <div className="bg-white rounded-2xl shadow-sm border border-gray-100 w-full max-w-md p-8">
         <div className="text-center mb-6">
           {/* TODO: replace with your own logo */}
-          <div className="mx-auto mb-3 text-2xl font-bold text-[#0A1F44]">RentInfra</div>
+          <div className="mx-auto mb-3 text-2xl font-bold text-[#0A1F44]">Zikulu </div>
           <h1 className="text-2xl font-bold text-[#0A1F44]">Welcome Back</h1>
-          <p className="text-gray-500 text-sm mt-1">Sign in to your RentInfra account</p>
+          <p className="text-gray-500 text-sm mt-1">Sign in to your Zikulu  account</p>
         </div>
 
         <button

@@ -11,23 +11,23 @@ import { Car, Location } from '@/types'
 import { SITE_URL, absoluteUrl } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'RentInfra — Car Rental Booked in Minutes',
+  title: 'Zikulu  — Car Rental Booked in Minutes',
   description:
     'Rent a car with insurance and unlimited mileage included. Free cancellation up to 24 hours before pick-up. Book online in four steps.',
   keywords: 'car rental, rent a car, cheap car hire, alquiler de coches, airport car rental',
   openGraph: {
-    title: 'RentInfra — Car Rental Booked in Minutes',
+    title: 'Zikulu  — Car Rental Booked in Minutes',
     description:
       'Insurance and unlimited mileage included. Free cancellation up to 24 hours before pick-up.',
     url: SITE_URL,
-    siteName: 'RentInfra',
+    siteName: 'Zikulu ',
     // TODO: replace with your own logo/OG image
-    images: [{ url: absoluteUrl('/og-image.png'), width: 800, height: 800, alt: 'RentInfra' }],
+    images: [{ url: absoluteUrl('/og-image.png'), width: 800, height: 800, alt: 'Zikulu ' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'RentInfra — Car Rental Booked in Minutes',
+    title: 'Zikulu  — Car Rental Booked in Minutes',
     description: 'Insurance and unlimited mileage included. Book online in four steps.',
   },
   alternates: { canonical: SITE_URL },

@@ -174,7 +174,7 @@ export async function processEmailQueue(limit = 25): Promise<{
     const ctx: TemplateContext = {
       reference: String(payload.reference ?? ''),
       name: String(payload.name ?? 'there'),
-      companyName: s.company_name || 'RentInfra',
+      companyName: s.company_name || 'Zikulu ',
       companyPhone: s.company_phone,
       companyEmail: s.company_email,
       siteUrl,

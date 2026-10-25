@@ -6,11 +6,11 @@ import { MessageCircle, Phone } from 'lucide-react'
 import { absoluteUrl } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions | RentInfra Car Rental',
+  title: 'Frequently Asked Questions | Zikulu  Car Rental',
   description: 'Find answers to common questions about renting a car with us — age requirements, pickup locations, insurance, deposits and more.',
   keywords: 'car rental faq, rent a car questions, car hire help',
   openGraph: {
-    title: 'FAQ — RentInfra Car Rental',
+    title: 'FAQ — Zikulu  Car Rental',
     description: 'Answers to common questions about our car rental service.',
     url: absoluteUrl('/faq'),
   },

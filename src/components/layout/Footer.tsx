@@ -6,12 +6,12 @@ interface FooterProps {
 }
 
 export default function Footer({ settings = {} }: FooterProps) {
-  const phone = settings.company_phone || '+10000000000'
+  const phone = settings.company_phone || '+260 975555555'
   const whatsapp = settings.social_whatsapp || `https://wa.me/${phone.replace(/[^0-9]/g, '')}`
-  const facebook = settings.social_facebook || 'https://facebook.com/rentinfra'
-  const instagram = settings.social_instagram || 'https://instagram.com/rentinfra'
-  const tiktok = settings.social_tiktok || 'https://tiktok.com/@rentinfra'
-  const address = settings.company_address || '123 Example Street, Suite 100, 00000 Demo City, Demo Country'
+  const facebook = settings.social_facebook || 'https://facebook.com/Zikulu '
+  const instagram = settings.social_instagram || 'https://instagram.com/Zikulu '
+  const tiktok = settings.social_tiktok || 'https://tiktok.com/@Zikulu '
+  const address = settings.company_address || '123 Example Street, Mutumbi 100, Lusaka City'
 
   return (
     <footer className="mt-auto bg-[var(--bar)] text-gray-300">
@@ -20,8 +20,8 @@ export default function Footer({ settings = {} }: FooterProps) {
           {/* Brand */}
           <div>
             <div className="mb-3 flex items-baseline gap-1 font-display text-base text-white">
-              <span>RENT</span>
-              <span className="text-[var(--pane-signal)]">INFRA</span>
+              <span>ZIKULU</span>
+              <span className="text-[var(--pane-signal)]">RIDES</span>
             </div>
             <p className="mb-4 text-sm text-gray-400">Affordable Car Rental, Anywhere</p>
 
@@ -118,7 +118,7 @@ export default function Footer({ settings = {} }: FooterProps) {
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-between gap-2 border-t-2 border-white/10 pt-6 text-xs text-gray-500 sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} RentInfra. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Zikulu . All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="/terms" className="hover:text-gray-300">Terms</Link>
             <Link href="/privacy" className="hover:text-gray-300">Privacy</Link>

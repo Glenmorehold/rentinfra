@@ -2,15 +2,15 @@ import { Metadata } from 'next'
 import { getSettingsMap } from '@/lib/settings'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | RentInfra Demo Car Rental',
-  description: 'Learn how RentInfra Demo collects, uses and protects your personal data in accordance with applicable data protection law.',
+  title: 'Privacy Policy | Zikulu  Demo Car Rental',
+  description: 'Learn how Zikulu  Demo collects, uses and protects your personal data in accordance with applicable data protection law.',
 }
 
 export default async function PrivacyPage() {
   // Contact details come from Settings → General so a fork does not publish
   // someone else's address in its legal pages.
   const settings = await getSettingsMap()
-  const company = settings.company_name || 'RentInfra'
+  const company = settings.company_name || 'Zikulu '
   const address = settings.company_address || ''
   const email = settings.company_email || ''
   const phone = settings.company_phone || ''
@@ -32,7 +32,7 @@ export default async function PrivacyPage() {
           [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:text-gray-600 [&_ul]:mb-4">
 
           {/* TODO: replace with your own company details, and update GDPR/local law references as needed for your jurisdiction */}
-          <p>RentInfra Demo (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is committed to protecting your personal data. This Privacy Policy explains how we collect, use and safeguard your information in accordance with applicable data protection law (e.g. GDPR, or your local equivalent).</p>
+          <p>Zikulu  Demo (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is committed to protecting your personal data. This Privacy Policy explains how we collect, use and safeguard your information in accordance with applicable data protection law (e.g. GDPR, or your local equivalent).</p>
 
           <h2>1. Data Controller</h2>
           <p>{company}{address ? `, ${address}` : ''}.<br />
