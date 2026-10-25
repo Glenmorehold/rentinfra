@@ -3,6 +3,7 @@
 import { Location } from '@/types'
 import { WizardData } from './BookingWizard'
 import { MapPin } from 'lucide-react'
+import { formatCurrency } from '@/lib/utils'
 
 interface Props {
   data: WizardData
@@ -80,7 +81,7 @@ export default function StepDates({ data, update, locations, onNext }: Props) {
             <option value="">Select location...</option>
             {locations.map(loc => (
               <option key={loc.id} value={loc.id}>
-                {loc.name_en} {loc.extra_fee > 0 ? `(+€${loc.extra_fee})` : '(Free)'}
+                {loc.name_en} {loc.extra_fee > 0 ? `(+${formatCurrency(loc.extra_fee)})` : '(Free)'}
               </option>
             ))}
           </select>
@@ -97,7 +98,7 @@ export default function StepDates({ data, update, locations, onNext }: Props) {
             <option value="">Select location...</option>
             {locations.map(loc => (
               <option key={loc.id} value={loc.id}>
-                {loc.name_en} {loc.extra_fee > 0 ? `(+€${loc.extra_fee})` : '(Free)'}
+                {loc.name_en} {loc.extra_fee > 0 ? `(+${formatCurrency(loc.extra_fee)})` : '(Free)'}
               </option>
             ))}
           </select>

@@ -3,6 +3,7 @@ import {
 } from '@react-pdf/renderer'
 import path from 'path'
 import fs from 'fs'
+import { formatCurrency } from '@/lib/utils'
 
 // ─── fonts ───────────────────────────────────────────────────────────────────
 const fontDir = path.join(process.cwd(), 'src/lib/pdf/fonts')
@@ -52,18 +53,18 @@ const T = {
     tax:             'IVA',
     total:           'TOTAL',
     fuelTitle:       'COMBUSTIBLE',
-    fuelText:        'El combustible queda a cargo del arrendatario, que devolverá el vehículo con el mismo nivel. De no ser así se cobrará el combustible más 30€ de repostaje. Controlar niveles de aceite y agua.',
+    fuelText:        'El combustible queda a cargo del arrendatario, que devolverá el vehículo con el mismo nivel. De no ser así se cobrará el combustible más K30 de repostaje. Controlar niveles de aceite y agua.',
     fuelPickup:      'Combustible entrega',
     fuelReturn:      'Combustible devolución',
     smokingTitle:    'PROHIBIDO FUMAR',
-    smokingText:     'Prohibido fumar en todos los vehículos. Se cargará 100€ de limpieza si se ha fumado en el vehículo.',
+    smokingText:     'Prohibido fumar en todos los vehículos. Se cargará K100 de limpieza si se ha fumado en el vehículo.',
     kmTitle:         'KILOMETRAJE',
-    kmText:          'Límite de 300 km diarios. Superado este límite: 0,60€/km adicional.',
+    kmText:          'Límite de 300 km diarios. Superado este límite: K0,60/km adicional.',
     // TODO: replace with your own territory restriction, or configure via settings
     territoryTitle:  'TERRITORIALIDAD',
     territoryText:   'Solo circulación dentro del territorio de alquiler acordado. Prohibido salir de dicho territorio sin autorización previa por escrito.',
     conditionTitle:  'ESTADO DEL VEHÍCULO',
-    conditionText:   'Declaro recibir el vehículo en perfecto estado y me obligo a devolverlo igual. Limpieza extra: 50€.',
+    conditionText:   'Declaro recibir el vehículo en perfecto estado y me obligo a devolverlo igual. Limpieza extra: K50.',
     signaturesTitle: 'FIRMAS',
     clientName:      'Nombre cliente',
     clientSign:      'Firma cliente',
@@ -124,18 +125,18 @@ const T = {
     tax:             'Tax',
     total:           'TOTAL',
     fuelTitle:       'FUEL POLICY',
-    fuelText:        'Fuel is the renter\'s responsibility. Vehicle must be returned with the same level. Otherwise: fuel cost + €30 refuelling fee. Monitor oil and water levels.',
+    fuelText:        'Fuel is the renter\'s responsibility. Vehicle must be returned with the same level. Otherwise: fuel cost + K30 refuelling fee. Monitor oil and water levels.',
     fuelPickup:      'Fuel at pickup',
     fuelReturn:      'Fuel at return',
     smokingTitle:    'NO SMOKING',
-    smokingText:     'Smoking is prohibited in all vehicles. A €100 cleaning fee applies if smoking occurred.',
+    smokingText:     'Smoking is prohibited in all vehicles. A K100 cleaning fee applies if smoking occurred.',
     kmTitle:         'MILEAGE',
-    kmText:          'Limit of 300 km/day. Beyond this: €0.60 per extra km.',
+    kmText:          'Limit of 300 km/day. Beyond this: K0.60 per extra km.',
     // TODO: replace with your own territory restriction, or configure via settings
     territoryTitle:  'TERRITORY',
     territoryText:   'Vehicle use is restricted to the rental territory as defined in your agreement. Leaving that territory without prior written consent is strictly forbidden.',
     conditionTitle:  'VEHICLE CONDITION',
-    conditionText:   'I confirm receipt in perfect condition and undertake to return it the same. Extra cleaning: €50.',
+    conditionText:   'I confirm receipt in perfect condition and undertake to return it the same. Extra cleaning: K50.',
     signaturesTitle: 'SIGNATURES',
     clientName:      'Client name',
     clientSign:      'Client signature',
@@ -265,7 +266,7 @@ const S = StyleSheet.create({
 // ─── helpers ──────────────────────────────────────────────────────────────────
 function fmt(n: number | null | undefined) {
   if (n == null) return '—'
-  return `€${n.toFixed(2)}`
+  return formatCurrency(n)
 }
 function fmtDate(d: string | null | undefined) {
   if (!d) return '—'

@@ -119,7 +119,7 @@ export default function LocationForm({ location }: { location?: Location }) {
             </select>
           </div>
           <div>
-            <label className={labelCls}>Extra fee (€)</label>
+            <label className={labelCls}>Extra fee (K)</label>
             <input
               type="number"
               step="0.01"

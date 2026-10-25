@@ -15,7 +15,7 @@ export default async function OfficeHoursSettings() {
       fields={[
         { key: 'office_hours_open',  label: 'Opening Time', type: 'time', description: 'Shown on website and used for after-hours fee logic' },
         { key: 'office_hours_close', label: 'Closing Time', type: 'time', description: 'Pickups/drop-offs after this time incur the after-hours fee' },
-        { key: 'after_hours_fee',    label: 'After-Hours Fee (€)', type: 'number', placeholder: '30', description: 'Added to bookings with pickup or return outside office hours' },
+        { key: 'after_hours_fee',    label: 'After-Hours Fee (K)', type: 'number', placeholder: '30', description: 'Added to bookings with pickup or return outside office hours' },
       ]}
       values={values}
     />

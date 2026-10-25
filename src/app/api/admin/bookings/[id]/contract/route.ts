@@ -8,6 +8,7 @@ import QRCode from 'qrcode'
 import fs from 'fs'
 import path from 'path'
 import { requireAdmin } from '@/lib/auth-guard'
+import { formatCurrency } from '@/lib/utils'
 
 export async function GET(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const denied = await requireAdmin()
@@ -61,7 +62,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
     `👤 ${b.guest_name || ''}`,
     `📅 ${b.pickup_date} → ${b.dropoff_date}`,
     `🚙 ${b.car ? `${b.car.make} ${b.car.model}` : ''}`,
-    `💶 €${b.total_amount?.toFixed(2) || '0.00'}`,
+    `💶 ${formatCurrency(Number(b.total_amount || 0))}`,
   ].filter(Boolean).join('\n')
 
   const waUrl = waPhone

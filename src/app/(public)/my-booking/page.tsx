@@ -136,7 +136,7 @@ export default function MyBookingPage() {
                   <div>
                     <p className="text-xs text-gray-400 mb-1">Extras</p>
                     {booking.booking_addons.map(ba => (
-                      <p key={ba.id} className="text-sm text-gray-600">{ba.addon_name_snapshot} — €{ba.subtotal.toFixed(2)}</p>
+                      <p key={ba.id} className="text-sm text-gray-600">{ba.addon_name_snapshot} — {formatCurrency(ba.subtotal)}</p>
                     ))}
                   </div>
                 </div>

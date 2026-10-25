@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { Car, Location, Addon } from '@/types'
 import { ArrowLeft, Plus, Trash2, Save, Loader2, AlertCircle, FileText } from 'lucide-react'
 import { calculateDays, getActivePriceList, calculateBookingPrice } from '@/lib/pricing'
+import { formatCurrency } from '@/lib/utils'
 
 type CarWithPriceLists = Car & {
   price_lists: { id: string; name: string; daily_rate: number; is_active: boolean; season_start: string | null }[]
@@ -308,7 +309,7 @@ export default function OfflineBookingForm({ cars, locations, addons, settings }
                         <input type="checkbox" checked={!!sel} onChange={() => toggleAddon(addon)} className="accent-[var(--pane-signal)] w-4 h-4" />
                         <div>
                           <p className="text-sm font-medium text-[var(--ink)]">{addon.name_en}</p>
-                          <p className="text-xs text-[var(--ink-soft)]">€{addon.price} {addon.pricing_type === 'per_day' ? '/day' : 'flat'}</p>
+                          <p className="text-xs text-[var(--ink-soft)]">{formatCurrency(addon.price)} {addon.pricing_type === 'per_day' ? '/day' : 'flat'}</p>
                         </div>
                       </label>
                       {sel && (
@@ -361,34 +362,34 @@ export default function OfflineBookingForm({ cars, locations, addons, settings }
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between text-xs text-[var(--ink-soft)]">
                   <span>Daily rate × {totalDays}d</span>
-                  <span>€{pricing.dailyRate.toFixed(2)}</span>
+                  <span>{formatCurrency(pricing.dailyRate)}</span>
                 </div>
                 {pricing.discountPct > 0 && (
                   <div className="flex justify-between text-xs text-emerald-600">
                     <span>Discount ({pricing.discountPct}%)</span>
-                    <span>−€{pricing.discountAmount.toFixed(2)}</span>
+                    <span>−{formatCurrency(pricing.discountAmount)}</span>
                   </div>
                 )}
                 {pricing.addonsTotal > 0 && (
                   <div className="flex justify-between text-xs text-[var(--ink-soft)]">
-                    <span>Extras</span><span>€{pricing.addonsTotal.toFixed(2)}</span>
+                    <span>Extras</span><span>{formatCurrency(pricing.addonsTotal)}</span>
                   </div>
                 )}
                 {pricing.locationFee > 0 && (
                   <div className="flex justify-between text-xs text-[var(--ink-soft)]">
-                    <span>Location fee</span><span>€{pricing.locationFee.toFixed(2)}</span>
+                    <span>Location fee</span><span>{formatCurrency(pricing.locationFee)}</span>
                   </div>
                 )}
                 {pricing.youngDriverFee > 0 && (
                   <div className="flex justify-between text-xs text-amber-600">
-                    <span>Young driver</span><span>€{pricing.youngDriverFee.toFixed(2)}</span>
+                    <span>Young driver</span><span>{formatCurrency(pricing.youngDriverFee)}</span>
                   </div>
                 )}
                 <div className="flex justify-between text-xs text-[var(--ink-soft)]">
-                  <span>Tax</span><span>€{pricing.taxAmount.toFixed(2)}</span>
+                  <span>Tax</span><span>{formatCurrency(pricing.taxAmount)}</span>
                 </div>
                 <div className="flex justify-between font-bold text-[var(--ink)] pt-2 border-t border-gray-100 text-base">
-                  <span>Total</span><span>€{pricing.total.toFixed(2)}</span>
+                  <span>Total</span><span>{formatCurrency(pricing.total)}</span>
                 </div>
               </div>
             )}

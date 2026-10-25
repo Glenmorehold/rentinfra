@@ -132,7 +132,7 @@ export default function AddonForm({ addon }: { addon?: Addon }) {
             </select>
           </div>
           <div>
-            <label className={labelCls}>Price (€) *</label>
+            <label className={labelCls}>Price (K) *</label>
             <input
               type="number"
               step="0.01"

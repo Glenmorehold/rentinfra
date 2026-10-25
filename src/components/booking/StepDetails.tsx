@@ -1,6 +1,7 @@
 'use client'
 
 import { WizardData } from './BookingWizard'
+import { formatCurrency } from '@/lib/utils'
 
 interface Props {
   data: WizardData
@@ -130,7 +131,7 @@ export default function StepDetails({
             className={inputClass('age')}
           />
           {data.driverAge && parseInt(data.driverAge) < 25 && parseInt(data.driverAge) >= minAge && (
-            <p className="text-xs text-amber-600 mt-1">Young driver surcharge applies (+€{settings.young_driver_surcharge_per_day}/day)</p>
+            <p className="text-xs text-amber-600 mt-1">Young driver surcharge applies (+{formatCurrency(Number(settings.young_driver_surcharge_per_day))}/day)</p>
           )}
           {data.driverAge && parseInt(data.driverAge) < minAge && (
             <p className="text-xs text-red-600 mt-1">Minimum driver age is {minAge}</p>

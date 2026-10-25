@@ -68,7 +68,7 @@ export async function POST(req: NextRequest) {
     .select('value')
     .eq('key', 'currency')
     .single()
-  const currency = (currencyRow?.value || 'EUR').toLowerCase()
+  const currency = (currencyRow?.value || 'ZMW').toLowerCase()
 
   try {
     const session = await stripe.checkout.sessions.create({

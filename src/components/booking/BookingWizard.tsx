@@ -8,6 +8,7 @@ import StepDetails from './StepDetails'
 import StepReview from './StepReview'
 import BookingConfirmation from './BookingConfirmation'
 import { calculateDays, getActivePriceList, calculateBookingPrice } from '@/lib/pricing'
+import { formatCurrency } from '@/lib/utils'
 
 interface BookingWizardProps {
   car: Car
@@ -175,7 +176,7 @@ export default function BookingWizard({
         </div>
         {priceList && pricing && (
           <div className="text-right">
-            <div className="text-2xl font-bold text-[#0A1F44]">€{pricing.total.toFixed(2)}</div>
+            <div className="text-2xl font-bold text-[#0A1F44]">{formatCurrency(pricing.total)}</div>
             <div className="text-xs text-gray-400">{totalDays} day{totalDays !== 1 ? 's' : ''}</div>
           </div>
         )}

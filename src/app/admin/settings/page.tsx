@@ -19,7 +19,7 @@ export default async function GeneralSettings() {
         { key: 'company_website', label: 'Website URL',     type: 'url',   placeholder: 'https://Zikulu .com' },
         { key: 'company_address', label: 'Office Address',  type: 'textarea', placeholder: 'Street, City, Country' },
         { key: 'google_maps_url', label: 'Google Maps Link', type: 'url',  placeholder: 'https://maps.google.com/...' },
-        { key: 'currency',        label: 'Currency',        placeholder: 'EUR', description: 'ISO currency code, e.g. EUR, USD, GBP' },
+        { key: 'currency',        label: 'Currency',        placeholder: 'ZMW', description: 'ISO currency code, e.g. ZMW (Kwacha), USD, EUR' },
       ]}
       values={values}
     />

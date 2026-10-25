@@ -424,7 +424,7 @@ export default function CarForm({ car, locations = [] }: CarFormProps) {
             <input className={inputCls} value={plName} onChange={e => setPlName(e.target.value)} placeholder="Standard" />
           </div>
           <div>
-            <label className={labelCls}>Daily Rate (€) *</label>
+            <label className={labelCls}>Daily Rate (K) *</label>
             <input className={inputCls} type="number" step="0.01" value={dailyRate}
               onChange={e => setDailyRate(e.target.value)} placeholder="e.g. 65.00" required min="0" />
           </div>
@@ -463,7 +463,7 @@ export default function CarForm({ car, locations = [] }: CarFormProps) {
                   <select className={selectCls} value={d.discount_type}
                     onChange={e => updateDiscount(i, 'discount_type', e.target.value)}>
                     <option value="percentage">%</option>
-                    <option value="fixed">€ fixed</option>
+                    <option value="fixed">K fixed</option>
                   </select>
                 </div>
                 <div>

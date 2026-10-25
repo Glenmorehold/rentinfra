@@ -5,10 +5,22 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function formatCurrency(amount: number, currency = 'EUR'): string {
+/** ISO 4217 code for the default currency (Zambian Kwacha). */
+export const DEFAULT_CURRENCY = 'ZMW'
+
+export function formatCurrency(amount: number, currency = DEFAULT_CURRENCY): string {
+  const code = currency.toUpperCase()
+  // Intl often prints "ZMW"/"MWK"; operators and customers expect "K".
+  if (code === 'ZMW' || code === 'MWK') {
+    const n = new Intl.NumberFormat('en-US', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    }).format(amount)
+    return `K${n}`
+  }
   return new Intl.NumberFormat('en-ES', {
     style: 'currency',
-    currency,
+    currency: code,
     minimumFractionDigits: 2,
   }).format(amount)
 }
