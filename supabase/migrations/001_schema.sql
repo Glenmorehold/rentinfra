@@ -453,13 +453,13 @@ INSERT INTO public.cars (slug, make, model, year, category, transmission, fuel_t
 
 -- Price lists for each car
 INSERT INTO public.price_lists (car_id, name, daily_rate, is_active)
-SELECT id, 'Standard Rate', 45.00, true FROM public.cars WHERE slug = 'renault-clio-2023';
+SELECT id, 'Standard Rate', 4500.00, true FROM public.cars WHERE slug = 'renault-clio-2023';
 
 INSERT INTO public.price_lists (car_id, name, daily_rate, is_active)
-SELECT id, 'Standard Rate', 85.00, true FROM public.cars WHERE slug = 'toyota-rav4-2023';
+SELECT id, 'Standard Rate', 8500.00, true FROM public.cars WHERE slug = 'toyota-rav4-2023';
 
 INSERT INTO public.price_lists (car_id, name, daily_rate, is_active)
-SELECT id, 'Standard Rate', 150.00, true FROM public.cars WHERE slug = 'mercedes-c-class-2023';
+SELECT id, 'Standard Rate', 1500.00, true FROM public.cars WHERE slug = 'mercedes-c-class-2023';
 
 -- Discounts for Renault Clio
 INSERT INTO public.price_list_discounts (price_list_id, min_days, max_days, discount_type, discount_value, label_en, label_es)
@@ -547,7 +547,7 @@ INSERT INTO public.settings (key, value, type, description) VALUES
 ('social_facebook', 'https://facebook.com/Zikulu ', 'string', 'Facebook page URL'),
 ('social_instagram', 'https://instagram.com/Zikulu ', 'string', 'Instagram profile URL'),
 ('social_tiktok', 'https://tiktok.com/@Zikulu ', 'string', 'TikTok profile URL'),
-('social_whatsapp', 'https://wa.me/10000000000', 'string', 'WhatsApp link')
+('social_whatsapp', 'https://wa.me/+260755555555', 'string', 'WhatsApp link')
 ON CONFLICT (key) DO NOTHING;
 
 -- ============================================================

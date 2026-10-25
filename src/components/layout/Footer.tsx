@@ -6,7 +6,7 @@ interface FooterProps {
 }
 
 export default function Footer({ settings = {} }: FooterProps) {
-  const phone = settings.company_phone || '+260 975555555'
+  const phone = settings.company_phone || '+26097555555'
   const whatsapp = settings.social_whatsapp || `https://wa.me/${phone.replace(/[^0-9]/g, '')}`
   const facebook = settings.social_facebook || 'https://facebook.com/Zikulu '
   const instagram = settings.social_instagram || 'https://instagram.com/Zikulu '
